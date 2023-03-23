@@ -16,6 +16,9 @@ export const ListHeader = styled.div`
   justify-content: space-around;
   color: white;
   width: 60%;
+  @media (max-width: 1450px) {
+    width: 80%;
+  }
 `;
 export const Text = styled.p`
   font-size: 1.5rem;
@@ -27,6 +30,13 @@ export const Text = styled.p`
     color: #00b6de;
     transform: scale(1.1);
     transition: 0.3s;
+  }
+  @media (max-width: 1450px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 768px) {
+    padding: 50px;
+    font-size: 1.5rem;
   }
 `;
 export const Button = styled.button`
@@ -42,6 +52,45 @@ export const Button = styled.button`
     cursor: pointer;
     background-color: #00b6de;
     color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  @media (max-width: 768px) {
+    width: 70%;
+    height: 70px;
+  }
+`;
+export const ResponsiveList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+export const Sidebar = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #252835;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const CloseButton = styled.div`
+  border: none;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  padding: 10px;
+
+  right: 0;
+  :hover {
+    cursor: pointer;
+    color: #00b6de;
     transform: scale(1.1);
     transition: 0.3s;
   }
