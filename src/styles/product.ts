@@ -6,6 +6,7 @@ export const Background = styled.div`
   color: white;
   background-repeat: no-repeat;
   background-position: center;
+  background-clip: padding-box;
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -70,7 +71,7 @@ export const Button = styled.button`
   }
 `;
 export const WhatsApp = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 220px;
   right: 50px;
   margin: 20px;

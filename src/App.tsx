@@ -1,11 +1,13 @@
 import Header from "./components/header"
 import Product from "./components/product"
+import Energy from "./components/energy"
 const App = () => {
   return (
-    <div >
+    < >
       <Header />
       <Product />
-    </div>
+      <Energy />
+    </>
   )
 }
 export default App
