@@ -6,4 +6,5 @@ export const GlobalStyle: GlobalStyleComponent<{}, {}> = createGlobalStyle`
         padding: 0;
         font-family: 'Inter';
     }
+    
 `;
