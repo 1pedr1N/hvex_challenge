@@ -5,9 +5,11 @@ import Omni from "./components/omni"
 import ProductView from "./components/productView"
 import ShowEngine from "./components/showEngine"
 import Contact from "./components/contacUs"
+import Faq from "./components/faq"
+import Footer from "./components/footer"
 const App = () => {
   return (
-    < >
+    <>
       <Header />
       <Product />
       <Energy />
@@ -15,6 +17,8 @@ const App = () => {
       <ProductView />
       <ShowEngine />
       <Contact />
+      <Faq />
+      <Footer />
     </>
   )
 }
