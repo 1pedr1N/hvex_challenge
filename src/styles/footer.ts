@@ -7,6 +7,7 @@ export const FooterContainer = styled.div`
   background-color: #1c2c44;
   width: 100%;
   height: 20vh;
+  margin-top: 30px;
 `;
 export const Collumn = styled.div`
   display: flex;

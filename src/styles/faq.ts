@@ -5,6 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 `;
 export const Title = styled.h1`
   color: #1c2c44;

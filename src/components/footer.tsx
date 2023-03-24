@@ -25,7 +25,7 @@ const Footer = () => {
                         <img
                             key={index}
                             src={item.img}
-                            width="75px"
+                            width="50px"
 
                         />
                     ))}
