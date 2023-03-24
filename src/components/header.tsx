@@ -1,7 +1,6 @@
 import * as S from '../styles/header';
 import Logo from '../assets/logo.svg';
 import Hamburger from 'hamburger-react'
-import BurguerIcon from '../assets/burguerIcon.png';
 import { useState } from 'react';
 const Header = () => {
     const breakpoint = 768;

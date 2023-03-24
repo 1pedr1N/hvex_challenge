@@ -1,10 +1,6 @@
-import { ReactElement } from "react";
-import * as S from "../styles/omniBox";
-interface OmniBoxProps {
-    name: string;
-    img: any;
-}
 
+import * as S from "../styles/omniBox";
+import { OmniBoxProps } from "../interfaces/omniboxprops.interface";
 const OmniBox = ({ name, img }: OmniBoxProps) => {
     return (
         <S.Container>

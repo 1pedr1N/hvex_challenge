@@ -1,15 +1,14 @@
-
-interface DescriptionBoxProps {
-    description: string;
-    img: string;
-}
+import * as S from "../styles/descriptionBox";
+import { DescriptionBoxProps } from "../interfaces/descriptionprops.interface";
 
 const DescriptionBox = ({ description, img }: DescriptionBoxProps) => {
     return (
-        <div className="description-box">
-            <img src={img} alt="description" />
-            <p>{description}</p>
-        </div>
+        <S.DescriptionBoxContainer>
+            <S.ImageBox>
+                <img src={img} />
+            </S.ImageBox>
+            <S.Text> {description} </S.Text>
+        </S.DescriptionBoxContainer>
     );
 };
 export default DescriptionBox;

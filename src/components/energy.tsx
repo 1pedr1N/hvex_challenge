@@ -1,14 +1,7 @@
 import * as S from "../styles/energy";
 import EnergyImage from "../assets/energy.svg";
 import Check from "../assets/check.svg";
-const textArray = [
-    "Monitoramento inteligente de ativos",
-    "Melhoria dos indicadores de continuidade",
-    "Comunicação Modular",
-    "Business Inteligence",
-    "Redução de Perdas técnicas e Não técnicas",
-
-];
+import { textArray } from "../utils/textArray";
 const Energy = () => {
     return (
         <S.Container>

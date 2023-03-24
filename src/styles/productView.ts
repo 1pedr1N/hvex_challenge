@@ -38,3 +38,14 @@ export const Desc = styled.p`
   color: #373737;
   max-width: 672px;
 `;
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 50%;
+  margin-top: 50px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;

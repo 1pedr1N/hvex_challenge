@@ -3,6 +3,8 @@ import Product from "./components/product"
 import Energy from "./components/energy"
 import Omni from "./components/omni"
 import ProductView from "./components/productView"
+import ShowEngine from "./components/showEngine"
+import Contact from "./components/contacUs"
 const App = () => {
   return (
     < >
@@ -11,6 +13,8 @@ const App = () => {
       <Energy />
       <Omni />
       <ProductView />
+      <ShowEngine />
+      <Contact />
     </>
   )
 }

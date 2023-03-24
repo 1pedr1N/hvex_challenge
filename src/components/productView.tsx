@@ -1,40 +1,7 @@
 import Product from "../assets/product.svg";
 import * as S from "../styles/productView";
-
-const ProductDetails = [
-    {
-        title: "Monitoramento de  tensão, corrente e carga;",
-        img: "https://media.discordapp.net/attachments/750522537938518131/1088855341955022908/rpm.png",
-    },
-    {
-        title: "Análise de perda de vida útil do transformador;",
-        img: "https://media.discordapp.net/attachments/750522537938518131/1088855341955022908/rpm.png",
-    },
-    {
-        title: "Medição do balanço energético de Perdas",
-        img: "https://media.discordapp.net/attachments/750522537938518131/1088855341955022908/rpm.png",
-    },
-    {
-        title: "",
-        img: "https://media.discordapp.net/attachments/750522537938518131/1088855341955022908/rpm.png",
-    },
-    {
-        title: "Análise de Fator de potência",
-        img: "https://media.discordapp.net/attachments/750522537938518131/1088855341955022908/rpm.png",
-    },
-    {
-        title: "Harmônicas de corrente e tensão",
-        img: "https://media.discordapp.net/attachments/750522537938518131/1088855341955022908/rpm.png",
-    },
-    {
-        title: "Medição de temperatura interna",
-        img: "https://media.discordapp.net/attachments/750522537938518131/1088855341955022908/rpm.png",
-    },
-    {
-        title: "Supervisão de  baixa tensão",
-        img: "https://media.discordapp.net/attachments/750522537938518131/1088855341955022908/rpm.png",
-    },
-]
+import DescriptionBox from "./descriptionBox";
+import { ProductDetails } from "../utils/productDetails";
 
 
 const ProductView = () => {
@@ -53,33 +20,12 @@ const ProductView = () => {
                     enviadas em tempo real , permitindo, assim, a administração remota de
                     dados como:
                 </S.Desc>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, facere!
-                </p>
+
+                <S.Grid>
+                    {ProductDetails.map((item) => (
+                        <DescriptionBox description={item.title} img={item.img} />
+                    ))}</S.Grid>
+
             </S.Content>
         </S.ProductViewContainer>
     );
